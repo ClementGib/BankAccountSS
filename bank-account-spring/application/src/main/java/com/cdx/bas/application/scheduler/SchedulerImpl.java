@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
-@SpringBootApplication
 @EnableScheduling
+@SpringBootApplication(scanBasePackages = {"com.cdx.bas.client", "com.cdx.bas.application.scheduler"})
 public class SchedulerImpl implements Scheduler {
 
     Logger logger = LoggerFactory.getLogger(SchedulerImpl.class);
