@@ -21,25 +21,25 @@ Simulation project for bank account and money transactions with Spring and Spark
 
 ## 🚀 How to execute the application
 
-Go to the project root directory and execute the following command to compile, test, package and install the different artifacts in your local maven repository.
+Execute the following command to build the project in the root directory:
 
 ```shell
 mvn clean install
 ```
 
-Or use the embedded maven wrapper if you don't have a maven installation.
+Or with embedded maven wrapper if you don't have a maven installed.
 
 ```shell
 ./mvnw clean install
 ```
 
-After creating all artifacts you can run the project with the following command:
+After building the project you can run it with:
 
 ```shell
 mvn spring-boot:run -pl application
 ```
 
-Or use the embedded maven wrapper if you don't have a maven installation.
+Or with embedded maven wrapper
 
 ```shell
 ./mvnw spring-boot:run -pl application
