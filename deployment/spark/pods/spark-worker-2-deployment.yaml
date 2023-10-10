@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: spark-worker-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spark-worker-2
+  template:
+    metadata:
+      labels:
+        app: spark-worker-2
+    spec:
+      containers:
+        - name: spark-worker-2
+          image: spark-worker-2-image:latest
+          ports:
+            - containerPort: 7077

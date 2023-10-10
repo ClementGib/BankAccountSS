@@ -6,7 +6,7 @@
 
 # Apache Spark
 
-![cluster-manager.png](img/cluster-manager.png)
+![cluster-manager.png](../img/cluster-manager.png)
 
 
 - [Français](#gestionnaires-de-cluster-apache-spark)
@@ -87,7 +87,7 @@ Apache Spark prend en charge différents modes d'exécution pour s'adapter à di
 
 Dans ce mode, Spark s'exécute sur une seule machine, utilisant tous les cœurs disponibles. Souvent utilisé pour le développement et les tests sur une machine locale.
 
-![local.png](img/local.png)
+![local.png](../img/local.png)
 
 ## 2. Mode Client
 
@@ -95,7 +95,7 @@ En mode client, le processus Driver s'exécute sur la machine cliente où l'appl
 Les tâches s'exécutent sur les nœuds du cluster. Couramment utilisé pour les déploiements sur des clusters YARN ou Mesos.
 Si le client arrête les drivers, les exécuteurs sont également arrêtés.
 
-![client.png](img/client.png)
+![client.png](../img/client.png)
 
 ## 3. Mode Cluster
 
@@ -106,7 +106,7 @@ Il s'agit du mode le plus courant pour les déploiements en production sur de gr
 Ces modes peuvent être utilisés en combinaison avec différents gestionnaires de clusters, tels que le gestionnaire autonome, YARN, Mesos ou Kubernetes.
 Le choix du mode d'exécution approprié dépend des exigences spécifiques de l'application, de la taille du cluster, des ressources disponibles et d'autres considérations opérationnelles.
 
-![cluster.png](img/cluster.png)
+![cluster.png](../img/cluster.png)
 
 
 # Apache Spark Cluster Managers
@@ -180,7 +180,7 @@ Apache Spark supports different execution modes to adapt to various environments
 In this mode, Spark runs on a single machine, utilizing all available cores. Often used for development and testing on a local machine.
 
 
-![local.png](img/local.png)
+![local.png](../img/local.png)
 
 ### 2. Client Mode
 
@@ -188,7 +188,7 @@ In client mode, Driver runs on client machine where the Spark application is sub
 Tasks run on the cluster nodes. Commonly used for deployments on YARN or Mesos clusters.
 If client kill drivers executors are killed as well.
 
-![client.png](img/client.png)
+![client.png](../img/client.png)
 
 ### 3. Cluster Mode
 
@@ -199,4 +199,4 @@ The most common mode for production deployments on large clusters. Tasks also ru
 These modes can be used in combination with different cluster managers, such as the standalone manager, YARN, Mesos, or Kubernetes. 
 Choosing the right execution mode depends on specific application requirements, cluster size, available resources, and other operational considerations.
 
-![cluster.png](img/cluster.png)
+![cluster.png](../img/cluster.png)

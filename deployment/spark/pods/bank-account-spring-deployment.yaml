@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: bank-account-spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bank-account-spring
+  template:
+    metadata:
+      labels:
+        app: bank-account-spring
+    spec:
+      containers:
+        - name: bank-account-spring
+          image: bank-account-spring-image:latest
