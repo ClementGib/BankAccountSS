@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Version argument or default
+# Version with argument or defaulting
 SPARK_VERSION=${1:-3.3.3}
 HADOOP_VERSION=${2:-3}
-
 
 echo $SPARK_VERSION
 echo $HADOOP_VERSION
