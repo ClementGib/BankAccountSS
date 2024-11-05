@@ -44,3 +44,9 @@ Or use the embedded maven wrapper if you don't have a maven installation.
 ```shell
 ./mvnw spring-boot:run -pl bootstrap
 ```
+
+VM option for `intelliJ IDEA`:
+
+```option
+--add-opens java.base/sun.nio.ch=ALL-UNNAMED
+```

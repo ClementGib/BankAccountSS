@@ -1,3 +1,5 @@
 spring:
   application:
-    name: bootstrap
+    name: YourApp
+#  main:
+#    web-application-type: servlet
