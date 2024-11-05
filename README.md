@@ -3,7 +3,7 @@ Simulation project for bank account and money transactions with Spring and Spark
 
 ## ⚙️ Requirements
 
-- JDK 21.
+- JDK 17
 - Maven 3.9.4
 
 ## 📘 Technologies
