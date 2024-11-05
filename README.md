@@ -36,11 +36,11 @@ Or use the embedded maven wrapper if you don't have a maven installation.
 After creating all artifacts you can run the project with the following command:
 
 ```shell
-mvn spring-boot:run -pl application
+mvn spring-boot:run -pl bootstrap
 ```
 
 Or use the embedded maven wrapper if you don't have a maven installation.
 
 ```shell
-./mvnw spring-boot:run -pl application
+./mvnw spring-boot:run -pl bootstrap
 ```
