@@ -11,13 +11,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import java.io.Serializable;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 @Configuration
 @EnableScheduling
 public class SchedulerImpl implements Scheduler, Serializable {
-    String filePath = getClass().getClassLoader().getResource("bs.csv").getPath();
+    String filePath = getClass().getClassLoader().getResource("bs.parquet").getPath();
     Logger logger = LoggerFactory.getLogger(SchedulerImpl.class);
 
     @Override
@@ -28,12 +26,8 @@ public class SchedulerImpl implements Scheduler, Serializable {
                 .master("local[*]")
                 .config("spark.ui.enabled", "false")
                 .getOrCreate();
-        Dataset<Row> bsDf = spark.read()
-                .option("delimiter", ";")
-                .option("header", "true")
-                .csv(filePath);
+        Dataset<Row> bsDf = spark.read().parquet(filePath);
         bsDf.show();
-        bsDf.write().parquet("bs.parquet");
         logger.info("Scheduler end");
     }
 }
