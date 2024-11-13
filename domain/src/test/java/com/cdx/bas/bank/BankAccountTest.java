@@ -1,4 +1,4 @@
-package com.cdx.bas.client;
+package com.cdx.bas.bank;
 
 public class BankAccountTest {
 }
