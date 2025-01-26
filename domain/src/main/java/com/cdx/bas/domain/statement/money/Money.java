@@ -1,12 +1,13 @@
-package com.cdx.bas.bank.statement.money;
+package com.cdx.bas.domain.statement.money;
 
 
 import jakarta.validation.constraints.NotNull;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Money {
+public class Money implements Serializable {
     @NotNull(message="amount must not be null.")
     private BigDecimal amount;
     

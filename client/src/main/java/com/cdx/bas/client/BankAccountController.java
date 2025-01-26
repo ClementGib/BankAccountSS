@@ -1,4 +1,4 @@
-package com.cdx.bas.bank;
+package com.cdx.bas.client;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

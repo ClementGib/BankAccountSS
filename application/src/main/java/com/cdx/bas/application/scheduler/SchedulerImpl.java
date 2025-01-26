@@ -1,10 +1,7 @@
 package com.cdx.bas.application.scheduler;
 
 
-import com.cdx.bas.bank.statement.processor.StatementProcessor;
-import org.apache.spark.sql.Dataset;
-import org.apache.spark.sql.Row;
-import org.apache.spark.sql.SparkSession;
+import com.cdx.bas.domain.statement.processor.StatementProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;

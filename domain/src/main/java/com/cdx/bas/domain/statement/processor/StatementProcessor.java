@@ -1,4 +1,4 @@
-package com.cdx.bas.bank.statement.processor;
+package com.cdx.bas.domain.statement.processor;
 
 public interface StatementProcessor {
     void process();
