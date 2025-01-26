@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.cdx.bas.client", "com.cdx.bas.application"})
+@ComponentScan(basePackages = {"com.cdx.bas.domain", "com.cdx.bas.client", "com.cdx.bas.application"})
 public class BootstrapApplication {
     public static void main(String[] args) {
         SpringApplication.run(BootstrapApplication.class, args);
